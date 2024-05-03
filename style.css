@@ -3,6 +3,152 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --dark_green: #1a4d2e;
+  --medium_green: #4f6f52;
+  --skin: #e8dfca;
+  --light_skin: #f5efe6;
+}
+
 body {
+  min-height: 100dvh;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--light_skin);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+header {
+  padding: 1rem 0;
+  max-width: 1204px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+#book_search {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  color: darkgray;
+  flex-grow: 1;
+  background: lightgrey;
+}
+#book_add,
+#submit_book {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  color: var(--light_skin);
+  background: var(--dark_green);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#book_add:hover {
+  background: var(--medium_green);
+}
+main {
+  flex-grow: 1;
+  max-width: 1204px;
+  width: 100%;
+  position: relative;
+}
+
+.input_box {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--dark_green);
+}
+.input_box > input,
+textarea {
+  margin: 1rem 0;
+  display: block;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+
+#modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--skin);
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#books_container {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.book_card {
+  padding: 1rem;
+  border-radius: 4px;
+  width: 250px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  background: #faf9f991;
+}
+
+.book_title {
+  margin: 0.5rem 0;
+  color: darkslategrey;
+}
+.book_author {
+  margin: 0.5rem 0;
+  color: slategray;
+}
+.book_summery {
+  margin: 0.5rem 0;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--skin);
+  background: var(--dark_green);
+  width: 100%;
 }
