@@ -38,7 +38,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
   font-size: 1.1rem;
 }
@@ -50,7 +49,7 @@ header {
   font-size: inherit;
   font-weight: 600;
   border-radius: 4px;
-  color: darkgray;
+  color: rgb(126, 125, 125);
   flex-grow: 1;
   background: lightgrey;
 }
@@ -87,10 +86,11 @@ main {
 textarea {
   margin: 1rem 0;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   outline: none;
   border: none;
   border-radius: 4px;
+  font-size: 1.1rem;
 }
 
 .hidden {
@@ -114,7 +114,6 @@ textarea {
 #books_container {
   padding: 1rem;
   margin: 1rem 0;
-  border: 1px solid black;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -138,7 +137,7 @@ textarea {
   margin: 0.5rem 0;
   color: slategray;
 }
-.book_summery {
+.book_summary {
   margin: 0.5rem 0;
   color: gray;
 }
@@ -151,4 +150,15 @@ footer {
   color: var(--skin);
   background: var(--dark_green);
   width: 100%;
+}
+@media (max-width: 450px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  #book_add,
+  #book_search {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
 }
