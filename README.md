@@ -14,6 +14,13 @@ SummaryME is a simple web application where users can create, summarize, and man
 - Delete existing book summaries
 - Search for books by title or author
 
+## Demo
+
+![s1](./assets/s1.png)
+![s2](./assets//s2.png)
+![s3](./assets//s3.png)
+![s4](./assets//s4.png)
+
 ## Installation
 
 1. Clone the repository:
@@ -21,3 +28,7 @@ SummaryME is a simple web application where users can create, summarize, and man
    ```bash
    git clone https://github.com/debrajroyofficial000/SummaryME.git
    ```
+
+## Preview
+
+[Link](https://6638e8928807c0e9b1abd7e1--summaryme.netlify.app/)
