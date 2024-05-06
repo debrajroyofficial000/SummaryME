@@ -127,6 +127,23 @@ textarea {
   width: 250px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   background: #faf9f991;
+  position: relative;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid red;
+  color: red;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background: red;
+  color: var(--light_skin);
 }
 
 .book_title {
