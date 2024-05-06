@@ -101,8 +101,7 @@ document.getElementById("book_search").addEventListener("input", (e) => {
     ? myLibrary.filter(
         (book) =>
           book.name.toLowerCase().includes(searchedItems.toLowerCase()) ||
-          book.author.toLowerCase().includes(searchedItems.toLowerCase()) ||
-          book.summary.toLowerCase().includes(searchedItems.toLowerCase())
+          book.author.toLowerCase().includes(searchedItems.toLowerCase())
       )
     : myLibrary;
 
